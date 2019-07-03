@@ -34,7 +34,7 @@ class House
 
 
   def rooms_sorted_by_category
-    @rooms.map do |room|
+    @rooms.each do |room|
       @rooms_sorted_by_category[room.category] = room
     end
     @rooms_sorted_by_category
